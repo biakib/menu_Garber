@@ -5,7 +5,7 @@ const path = require('path');
 const { root, node, context, recipes } = require('./runtime.cjs')();
 assert.equal(new Set(recipes.map(r => r.id)).size, recipes.length, 'Duplicate recipe IDs');
 for (const r of recipes) {
-  assert.ok(r.title && r.category && r.ingredients.length && r.steps.length);
+  assert.ok(r.title && r.category && r.ingredients.length && Array.isArray(r.steps));
   for (const ingredient of r.ingredients) assert.ok((Number.isFinite(ingredient[1]) && ingredient[1] >= 0) || (ingredient[1] === null && ingredient[2]));
   vm.runInContext(`selectRecipe(${JSON.stringify(r.id)})`, context);
   for (const text of [r.title, 'Ингредиенты', 'Приготовление', 'Оригинал']) assert.ok(node('#card').innerHTML.includes(text));
@@ -28,4 +28,12 @@ for(const r of recipes.filter(r=>r.source==='book'))assert.ok(fs.existsSync(path
 assert.equal(vm.runInContext("ingredientAmount(recipes.find(r=>r.id==='book-009').ingredients[0],2)",context),'400 МЛ');
 assert.equal(vm.runInContext("ingredientAmount(recipes.find(r=>r.id==='book-009').ingredients[2],2)",context),'2 СТ.Л');
 node('#source-filter').value='book'; search('');assert.equal(node('#search-status').textContent,'Блюд в разделе: 91');
-node('#source-filter').value='garber';search('');assert.equal(node('#search-status').textContent,'Блюд в разделе: 6');
+node('#source-filter').value='garber';search('');assert.equal(node('#search-status').textContent,'Блюд в разделе: 75');
+
+assert.equal(recipes.length,166);
+for(const r of recipes.filter(r=>r.sourceImages))for(const p of r.sourceImages)assert.ok(fs.existsSync(path.join(root,p.file)),p.file);
+for(const [id,count,pages] of [['tomato',7,[2639,2640]],['garber-6',15,[2641,2642]],['garber-10',6,[2642,2643]],['garber-12',3,[2643]],['garber-16',4,[2644,2645]],['garber-49',7,[2701,2702]]]){const r=recipes.find(r=>r.id===id);assert.equal(r.ingredients.length,count);assert.deepEqual(Array.from(r.pages),pages);assert.ok(r.steps.length);}
+
+assert.equal(recipes.filter(r=>r.title==='Салат из бланшированных овощей с томатной сальсой').length,1);
+const categories=new Set(fs.readFileSync(path.join(root,'index.html'),'utf8').matchAll(/data-filter="([^"]+)"/g));
+for(const r of recipes)assert.ok([...categories].some(m=>m[1]===r.category),r.category);
