@@ -37,3 +37,22 @@ for(const [id,count,pages] of [['tomato',7,[2639,2640]],['garber-6',15,[2641,264
 assert.equal(recipes.filter(r=>r.title==='Салат из бланшированных овощей с томатной сальсой').length,1);
 const categories=new Set(fs.readFileSync(path.join(root,'index.html'),'utf8').matchAll(/data-filter="([^"]+)"/g));
 for(const r of recipes)assert.ok([...categories].some(m=>m[1]===r.category),r.category);
+
+// Quantity updates preserve the existing card instead of replacing focused controls.
+vm.runInContext("selectRecipe('garber-6')",context);
+const minestrone=recipes.find(r=>r.id==='garber-6');
+let flashes=0;
+const quantityCells=minestrone.ingredients.map(i=>({textContent:vm.runInContext(`ingredientAmount(${JSON.stringify(i)},1)`,context),animate(){flashes++;},getAnimations(){return[];}}));
+const cardBefore=node('#card').innerHTML;
+node('#card').querySelectorAll=()=>quantityCells;
+context.window.matchMedia=()=>({matches:false});
+vm.runInContext('updateQuantity(2)',context);
+assert.equal(node('#card').innerHTML,cardBefore);
+assert.equal(quantityCells[7].textContent,'500 г');
+assert.equal(quantityCells[6].textContent,'1 г ±');
+assert.equal(quantityCells[10].textContent,'20 (без единицы)');
+assert.equal(flashes,13);
+context.window.matchMedia=()=>({matches:true});
+vm.runInContext('updateQuantity(3)',context);
+assert.equal(flashes,13,'Reduced motion must skip animations');
+assert.equal(quantityCells[7].textContent,'750 г');
