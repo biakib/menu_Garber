@@ -65,7 +65,10 @@ const recipes = [
         "file": "sources/garber/IMG_2639.jpg",
         "label": "IMG_2639"
       }
-    ]
+    ],
+    "ingredientLinks": {
+      "9": "garber-9"
+    }
   },
   {
     "id": "quinoa",
@@ -194,7 +197,10 @@ const recipes = [
         "file": "sources/garber/IMG_2640.jpg",
         "label": "IMG_2640"
       }
-    ]
+    ],
+    "ingredientLinks": {
+      "4": "garber-15"
+    }
   },
   {
     "id": "pumpkin",
@@ -281,7 +287,12 @@ const recipes = [
         "file": "sources/garber/IMG_2640.jpg",
         "label": "IMG_2640"
       }
-    ]
+    ],
+    "ingredientLinks": {
+      "1": "garber-9",
+      "2": "garber-9",
+      "3": "garber-9"
+    }
   },
   {
     "id": "smoothie",
@@ -377,7 +388,12 @@ const recipes = [
         "file": "sources/garber/IMG_2638.jpg",
         "label": "IMG_2638"
       }
-    ]
+    ],
+    "ingredientLinks": {
+      "0": "garber-2",
+      "2": "garber-9",
+      "3": "garber-41"
+    }
   },
   {
     "id": "garber-2",
@@ -476,7 +492,10 @@ const recipes = [
         "file": "sources/garber/IMG_2638.jpg",
         "label": "IMG_2638"
       }
-    ]
+    ],
+    "ingredientLinks": {
+      "1": "garber-1"
+    }
   },
   {
     "id": "garber-5",
@@ -648,7 +667,10 @@ const recipes = [
         "file": "sources/garber/IMG_2642.jpg",
         "label": "IMG_2642"
       }
-    ]
+    ],
+    "ingredientLinks": {
+      "7": "garber-41"
+    }
   },
   {
     "id": "garber-7",
@@ -869,7 +891,11 @@ const recipes = [
         "file": "sources/garber/IMG_2643.jpg",
         "label": "IMG_2643"
       }
-    ]
+    ],
+    "ingredientLinks": {
+      "2": "garber-8",
+      "5": "garber-15"
+    }
   },
   {
     "id": "garber-11",
@@ -1018,7 +1044,10 @@ const recipes = [
         "file": "sources/garber/IMG_2643.jpg",
         "label": "IMG_2643"
       }
-    ]
+    ],
+    "ingredientLinks": {
+      "0": "garber-11"
+    }
   },
   {
     "id": "garber-13",
@@ -1117,7 +1146,11 @@ const recipes = [
         "file": "sources/garber/IMG_2644.jpg",
         "label": "IMG_2644"
       }
-    ]
+    ],
+    "ingredientLinks": {
+      "0": "garber-13",
+      "1": "garber-9"
+    }
   },
   {
     "id": "garber-15",
@@ -1245,7 +1278,10 @@ const recipes = [
         "file": "sources/garber/IMG_2645.jpg",
         "label": "IMG_2645"
       }
-    ]
+    ],
+    "ingredientLinks": {
+      "1": "garber-9"
+    }
   },
   {
     "id": "garber-17",
@@ -1295,7 +1331,10 @@ const recipes = [
         "file": "sources/garber/IMG_2645.jpg",
         "label": "IMG_2645"
       }
-    ]
+    ],
+    "ingredientLinks": {
+      "2": "garber-16"
+    }
   },
   {
     "id": "garber-18",
@@ -1501,7 +1540,10 @@ const recipes = [
         "file": "sources/garber/IMG_2646.jpg",
         "label": "IMG_2646"
       }
-    ]
+    ],
+    "ingredientLinks": {
+      "7": "garber-21"
+    }
   },
   {
     "id": "garber-21",
@@ -1664,7 +1706,14 @@ const recipes = [
         "file": "sources/garber/IMG_2647.jpg",
         "label": "IMG_2647"
       }
-    ]
+    ],
+    "ingredientLinks": {
+      "0": [
+        "garber-32",
+        "garber-24",
+        "garber-22"
+      ]
+    }
   },
   {
     "id": "garber-24",
@@ -1768,7 +1817,10 @@ const recipes = [
         "file": "sources/garber/IMG_2648.jpg",
         "label": "IMG_2648"
       }
-    ]
+    ],
+    "ingredientLinks": {
+      "0": "garber-24"
+    }
   },
   {
     "id": "garber-26",
@@ -2006,7 +2058,10 @@ const recipes = [
         "file": "sources/garber/IMG_2649.jpg",
         "label": "IMG_2649"
       }
-    ]
+    ],
+    "ingredientLinks": {
+      "0": "garber-28"
+    }
   },
   {
     "id": "garber-30",
@@ -2143,7 +2198,10 @@ const recipes = [
         "file": "sources/garber/IMG_2650.jpg",
         "label": "IMG_2650"
       }
-    ]
+    ],
+    "ingredientLinks": {
+      "0": "garber-30"
+    }
   },
   {
     "id": "garber-32",
@@ -2371,7 +2429,10 @@ const recipes = [
         "file": "sources/garber/IMG_2652.jpg",
         "label": "IMG_2652"
       }
-    ]
+    ],
+    "ingredientLinks": {
+      "0": "garber-34"
+    }
   },
   {
     "id": "garber-36",
@@ -2428,7 +2489,10 @@ const recipes = [
         "file": "sources/garber/IMG_2653.jpg",
         "label": "IMG_2653"
       }
-    ]
+    ],
+    "ingredientLinks": {
+      "3": "garber-41"
+    }
   },
   {
     "id": "garber-37",
@@ -3056,7 +3120,10 @@ const recipes = [
         "file": "sources/garber/IMG_2697.jpg",
         "label": "IMG_2697"
       }
-    ]
+    ],
+    "ingredientLinks": {
+      "0": "garber-50"
+    }
   },
   {
     "id": "garber-45",
@@ -3272,7 +3339,10 @@ const recipes = [
         "file": "sources/garber/IMG_2701.jpg",
         "label": "IMG_2701"
       }
-    ]
+    ],
+    "ingredientLinks": {
+      "1": "garber-42"
+    }
   },
   {
     "id": "garber-49",
@@ -3347,7 +3417,10 @@ const recipes = [
         "file": "sources/garber/IMG_2702.jpg",
         "label": "IMG_2702"
       }
-    ]
+    ],
+    "ingredientLinks": {
+      "3": "garber-9"
+    }
   },
   {
     "id": "garber-50",
@@ -3408,7 +3481,10 @@ const recipes = [
         "file": "sources/garber/IMG_2702.jpg",
         "label": "IMG_2702"
       }
-    ]
+    ],
+    "ingredientLinks": {
+      "5": "garber-43"
+    }
   },
   {
     "id": "garber-51",
@@ -3468,7 +3544,10 @@ const recipes = [
         "file": "sources/garber/IMG_2697.jpg",
         "label": "IMG_2697"
       }
-    ]
+    ],
+    "ingredientLinks": {
+      "0": "garber-50"
+    }
   },
   {
     "id": "garber-52",
@@ -4299,7 +4378,11 @@ const recipes = [
         "file": "sources/garber/IMG_2706.jpg",
         "label": "IMG_2706"
       }
-    ]
+    ],
+    "ingredientLinks": {
+      "8": "garber-62",
+      "7": "garber-68"
+    }
   },
   {
     "id": "garber-64",
@@ -4393,7 +4476,11 @@ const recipes = [
         "file": "sources/garber/IMG_2707.jpg",
         "label": "IMG_2707"
       }
-    ]
+    ],
+    "ingredientLinks": {
+      "8": "garber-62",
+      "7": "garber-68"
+    }
   },
   {
     "id": "garber-65",
@@ -4511,7 +4598,10 @@ const recipes = [
         "file": "sources/garber/IMG_2708.jpg",
         "label": "IMG_2708"
       }
-    ]
+    ],
+    "ingredientLinks": {
+      "7": "garber-65"
+    }
   },
   {
     "id": "garber-67",
@@ -4636,7 +4726,10 @@ const recipes = [
         "file": "sources/garber/IMG_2709.jpg",
         "label": "IMG_2709"
       }
-    ]
+    ],
+    "ingredientLinks": {
+      "4": "garber-68"
+    }
   },
   {
     "id": "garber-68",
@@ -5818,7 +5911,10 @@ const recipes = [
       "Выливаем заливку в овощи, ставим огонь на самый минимум, накрываем крышкой и ждём 3-5 минут",
       "После переворачиваем и даём постоять ещё 2 - 3 минуты.",
       "Готовый омлет посыпаем мелко нарубленной зеленью или вместе со свежими овощами."
-    ]
+    ],
+    "ingredientLinks": {
+      "6": "book-089"
+    }
   },
   {
     "id": "book-025",
@@ -5973,7 +6069,10 @@ const recipes = [
       "Добавить туда сок половины лимона, масло, специи, мёд, нори и воду.",
       "Взбить всё до однородной консистенции.",
       "Можно подавать как основное блюдо с овощными стиками, так и как топпинг к омлету или любому другому блюду"
-    ]
+    ],
+    "ingredientLinks": {
+      "5": "book-089"
+    }
   },
   {
     "id": "book-027",
@@ -6357,7 +6456,10 @@ const recipes = [
       "Листья норм нащипайте мелкими листочками",
       "В глубокой миске смешать овощи с кукурузой, листьями нори и капелькой масла. перемешайте",
       "Подавать с соусом из зелёной гречки"
-    ]
+    ],
+    "ingredientLinks": {
+      "8": "book-071"
+    }
   },
   {
     "id": "book-032",
@@ -6997,7 +7099,10 @@ const recipes = [
       "Отдельно выжать сок из лимона, добавить мёд и урбеч, специи.",
       "Соединить все овощи и добавить масло, перемешать.",
       "Выложить на тарелку, украсить кунжутом."
-    ]
+    ],
+    "ingredientLinks": {
+      "8": "book-089"
+    }
   },
   {
     "id": "book-040",
@@ -7599,7 +7704,10 @@ const recipes = [
       "После, забрасываем к овощам лапшу и заливаем овощным бульоном. закрываем крышкой и оставляем на 3-5 минут",
       "Снимаем с огня и даём настояться в течение 5 минут",
       "Перед отдачей, в подостывшее блюдо, добавляем сок лимона и мёд. при желании можно использовать соевый соус естественного брожения."
-    ]
+    ],
+    "ingredientLinks": {
+      "7": "book-089"
+    }
   },
   {
     "id": "book-048",
@@ -7713,7 +7821,10 @@ const recipes = [
       "Соус готовим на кокосовом масле из кокосового молока с чесноком, соевым соусом и перцем. доводим до первых пузырьков и даём немного остыть. смешиваем соус с лапшой.",
       "Соединяем все ингредиенты. выкладываем на зелень тыкву,в центр тарелки лапшу и зелень на украшение.",
       "Рисовая лапша готова"
-    ]
+    ],
+    "ingredientLinks": {
+      "10": "book-089"
+    }
   },
   {
     "id": "book-049",
@@ -7865,7 +7976,10 @@ const recipes = [
       "Смешиваем два вида капусты в сковородке и тушим под крышкой, с добавлением 100 мл воды, в течении 5-10 минут, периодически помешивая.",
       "Снимаем с огня и добавляем микс нарезанной зелени и даём настояться 3 - 5 минут.",
       "Перед отдачей добавляем сок лимона и мёд по вкусу. соевый соус естественного брожения, при желании."
-    ]
+    ],
+    "ingredientLinks": {
+      "6": "book-089"
+    }
   },
   {
     "id": "book-051",
@@ -8065,7 +8179,10 @@ const recipes = [
       "Налить 700 мл воды, довести до кипения и закрыть крышкой. тушить 10-15 минут до готовности.",
       "Перед отдачей добавить гарам масалу, мёд и лимонный сок, все перемешать и посыпать свежей кинзой.",
       "Подавать с рисом, чапати и любыми топпингами по вкусу"
-    ]
+    ],
+    "ingredientLinks": {
+      "4": "book-089"
+    }
   },
   {
     "id": "book-053",
@@ -8188,7 +8305,10 @@ const recipes = [
       "Дать котлеткам подрумяниться с обеих сторон, после чего выкладываем их на противень, смазанный маслом",
       "Ставим котлетки в духовку на 10-15 минут",
       "Можно подавать с соусом на выбор или овощами"
-    ]
+    ],
+    "ingredientLinks": {
+      "4": "book-089"
+    }
   },
   {
     "id": "book-055",
@@ -9021,7 +9141,10 @@ const recipes = [
       "Все вместе проварите 5-7 минут.",
       "Из готового супа уберите лавровый лист, погружным блендером пюрируйте суп до кремообразного состояния.",
       "Добавьте мёд с лимоном или соль в подостывший суп."
-    ]
+    ],
+    "ingredientLinks": {
+      "8": "book-089"
+    }
   },
   {
     "id": "book-064",
@@ -9461,7 +9584,10 @@ const recipes = [
       "Добавить картошку, бадьян и варить на медленном огне 25 минут, пока чечевица полностью не разварится.",
       "Подавать с зеленью.",
       "В подостывший суп можно добавить сок лимона и мёд + специи по вкусу."
-    ]
+    ],
+    "ingredientLinks": {
+      "7": "book-093"
+    }
   },
   {
     "id": "book-068",
@@ -10512,7 +10638,10 @@ const recipes = [
       "Убираем галету в духовку на 30 минут при 190 градусах до готовности.",
       "Подавать можно блюдо обдав соком лимона и мёда, с добавлением косового молока. можно заменить на йогурт греческий.",
       "Муку можно использовать ц/з, а часть (100 г) заменить на миндальную. люблю также добавлять +30 г кокосовой стружки."
-    ]
+    ],
+    "ingredientLinks": {
+      "10": "book-089"
+    }
   },
   {
     "id": "book-082",
@@ -11413,7 +11542,10 @@ const recipes = [
       "В миске хорошо перемешать лен, морковную смесь, специи.",
       "Полученную массу уложить на пергаментную бумагу слоем толщиной примерно 5 мм. нарезать ножом на нужные вам кусочки.",
       "Отправить листы в дегидратор сушиться на 12 часов при 40 градусов или в приоткрытую духовку на минимальной температуре."
-    ]
+    ],
+    "ingredientLinks": {
+      "5": "book-089"
+    }
   },
   {
     "id": "book-095",

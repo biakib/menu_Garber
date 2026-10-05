@@ -56,3 +56,21 @@ context.window.matchMedia=()=>({matches:true});
 vm.runInContext('updateQuantity(3)',context);
 assert.equal(flashes,13,'Reduced motion must skip animations');
 assert.equal(quantityCells[7].textContent,'750 г');
+
+for(const r of recipes){
+  for(const [index,target] of Object.entries(r.ingredientLinks||{})){
+    assert.ok(r.ingredients[Number(index)],'Invalid linked ingredient');
+    for(const id of Array.isArray(target)?target:[target])assert.ok(id!==r.id&&recipes.some(t=>t.id===id),'Invalid preparation link');
+  }
+}
+context.window.location={hash:'#recipe=garber-12'};
+context.window.history={pushState(_state,_title,hash){context.window.location.hash=hash;},replaceState(_state,_title,hash){context.window.location.hash=hash;}};
+assert.equal(vm.runInContext('recipeFromHash()',context),'garber-12');
+context.window.location.hash='#recipe=%broken';assert.equal(vm.runInContext('recipeFromHash()',context),null);
+node('#source-filter').value='book';node('#search').value='банан';
+vm.runInContext("openLinkedRecipe('garber-11')",context);
+assert.equal(node('#source-filter').value,'Все');assert.equal(node('#search').value,'');
+assert.equal(context.window.location.hash,'#recipe=garber-11');
+assert.ok(node('#card').innerHTML.includes('Голубцы / кролик П/Ф'));
+const linkedIngredient=vm.runInContext("ingredientName(recipes.find(r=>r.id==='garber-12'),recipes.find(r=>r.id==='garber-12').ingredients[0],0)",context);
+assert.ok(linkedIngredient.includes('href="#recipe=garber-11"'));
