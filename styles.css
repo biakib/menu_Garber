@@ -26,7 +26,6 @@ button:active{background-color:#e3edda}
 @media print{main{padding:0}.sheet-head,.sheet-body{padding:.75rem 0}*{animation:none!important;transition:none!important}}
 
 .card-actions{display:flex;flex-wrap:wrap;gap:.5rem;max-width:100%;min-width:0}
-.recipe-permalink{display:inline-flex;align-items:center;min-height:44px;padding:.5rem .625rem;border-radius:.5rem;color:#416c20;text-underline-offset:.2em;overflow-wrap:anywhere}
 .ingredient-link{color:#416c20;text-decoration:underline;text-underline-offset:.2em;overflow-wrap:anywhere}
 .ingredient-link:hover{color:#254a09}.ingredient-variants{display:flex;flex-direction:column;gap:.5rem;margin-top:.5rem;font-size:.875rem}
 .link-status{font-size:.875rem;color:#416c20;margin:0}.link-status:empty{display:none}
