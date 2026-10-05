@@ -31,3 +31,5 @@ button:active{background-color:#e3edda}
 .link-status{font-size:.875rem;color:#416c20;margin:0}.link-status:empty{display:none}
 @media(max-width:479px){.card-actions{width:100%}.card-actions .print{flex:1 1 auto}}
 @media print{.card-actions,.link-status{display:none!important}.ingredient-link{color:inherit;text-decoration:none}}
+
+.site-nav{display:flex;flex-wrap:wrap;gap:.5rem 1rem;max-width:100%;min-width:0}.site-nav a{display:flex;align-items:center;min-height:44px;color:#e8eef4;font-size:.9375rem;text-decoration:none;overflow-wrap:anywhere}.site-nav a[aria-current=page]{color:var(--green);text-decoration:underline;text-underline-offset:.3em}.site-nav a:hover{color:var(--green)}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
