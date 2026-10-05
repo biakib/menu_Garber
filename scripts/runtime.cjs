@@ -11,6 +11,7 @@ module.exports = function () {
   const context = { document: { querySelector: node, querySelectorAll: () => [] }, Intl, window: { print() {} } };
   vm.createContext(context);
   vm.runInContext(fs.readFileSync(path.join(root, 'data/recipes.js'), 'utf8'), context);
+  vm.runInContext(fs.readFileSync(path.join(root, 'motion.js'), 'utf8'), context);
   vm.runInContext(fs.readFileSync(path.join(root, 'app.js'), 'utf8'), context);
   return { root, nodes, node, context, recipes: vm.runInContext('recipes', context) };
 };
